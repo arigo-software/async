@@ -7,8 +7,8 @@
     "dist/async.js",
     "dist/async.min.js"
   ],
-  "author": "Caolan McMahon",
-  "version": "1.5.0",
+  "author": "Caolan McMahon/Simon Ruetzler",
+  "version": "1.5.0-1",
   "keywords": [
     "async",
     "callback",
