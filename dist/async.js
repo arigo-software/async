@@ -876,7 +876,7 @@
                             callback(err);
                             errored = true;
                         } else {
-                            replenish();
+                            setImmediate(replenish);
                         }
                     }));
                 }
@@ -4635,8 +4635,11 @@
         if (!test()) return cb(null);
         var next = rest(function (err, args) {
             if (err) return cb(err);
-            if (test.apply(this, args)) return iteratee(next);
-            cb.apply(null, [null].concat(args));
+            if (test.apply(this, args)){
+                setImmediate(function(){
+                    iteratee(next);
+                });
+            }else cb.apply(null, [null].concat(args));
         });
         iteratee(next);
     }
