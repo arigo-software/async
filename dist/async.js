@@ -876,7 +876,7 @@
                             callback(err);
                             errored = true;
                         } else {
-                            setImmediate(replenish);
+                            setImmediate$1(replenish);
                         }
                     }));
                 }
@@ -4636,7 +4636,7 @@
         var next = rest(function (err, args) {
             if (err) return cb(err);
             if (test.apply(this, args)){
-                setImmediate(function(){
+                setImmediate$1(function(){
                     iteratee(next);
                 });
             }else cb.apply(null, [null].concat(args));
