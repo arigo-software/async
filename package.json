@@ -1,7 +1,7 @@
 {
   "name": "async",
   "description": "Higher-order functions and common patterns for asynchronous code",
-  "version": "2.0.0-rc.5-3",
+  "version": "2.0.0-rc.5-4",
   "main": "dist/async.js",
   "author": "Caolan McMahon",
   "contributors": [{
@@ -22,8 +22,6 @@
     "utility"
   ],
   "dependencies": {
-    "lodash": "^4.8.0",
-    "lodash-es": "^4.8.0"
   },
   "devDependencies": {
     "babel-cli": "^6.3.17",
@@ -46,6 +44,8 @@
     "karma-firefox-launcher": "^0.1.6",
     "karma-mocha": "^0.2.0",
     "karma-mocha-reporter": "^1.0.2",
+	"lodash": "^4.8.0",
+	"lodash-es": "^4.8.0",
     "mocha": "^2.2.5",
     "native-promise-only": "^0.8.0-a",
     "nyc": "^2.1.0",
